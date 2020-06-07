@@ -1,0 +1,66 @@
+/* box model
+
+Modelo de caixa
+Toda caixa tem
+largura, altura, espaçamento, preenchimentos,
+bordas, cor, fundo, maneira que é vista pelo html (display)
+posicionamento, alinhamento
+
+*/
+:root {
+    --title-color: #322153;
+    --primary-color: #31cb79;
+}
+/* serve para repetir em todos osblocos algo padrão, como a cor, 
+casoseja necessario mudar a cor , é só mudar aqui e não precisa mudar em todos os outros blocos
+
+:root {
+    --title-color: #322153;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+/*
+o asterisco é comando de geral, serve para retirar todos os settings padrão de fabrica
+retira as margens e preenchimentos dos blocos originais , para incrementar os valores inseridos nos blocos criados
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; define todas as boxs com as medidas apartir das bordas
+
+}
+*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+} 
+/* forma de aplicar a fonte */
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+
+}
+/*
+bloco body
+
+body {
+    background: #f0f0f5; <!-- muda a cor, o sistema hexadecimal vai de 0 (menor força de cor - preto) a f (maior força de cor - branco) no sistema RGB, #--red --green --blue -->
+}
+*/
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+
+}
